@@ -68,7 +68,7 @@ class _homepageState extends State<homepage> {
                     children: [
                       TextField(
                         controller: _save,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           border: OutlineInputBorder(),
                         ),
                       ),
@@ -85,7 +85,7 @@ class _homepageState extends State<homepage> {
                               },
                               child: const Text(
                                 "Save",
-                                style: TextStyle(fontSize: 20),
+                                style: TextStyle(fontSize: 21),
                               ),
                             ),
                           ),

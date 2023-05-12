@@ -20,7 +20,7 @@ class ToDotile extends StatelessWidget {
       padding: const EdgeInsets.all(25.0),
       child: Slidable(
         endActionPane: ActionPane(
-          motion: StretchMotion(),
+          motion: const StretchMotion(),
           children: [
             SlidableAction(
               onPressed: deletefunction,
@@ -41,6 +41,9 @@ class ToDotile extends StatelessWidget {
               Text(
                 taskname,
                 style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
                     decoration: taskcompleted
                         ? TextDecoration.lineThrough
                         : TextDecoration.none),

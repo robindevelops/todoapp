@@ -11,8 +11,8 @@ class homepage extends StatefulWidget {
 class _homepageState extends State<homepage> {
   TextEditingController _save = TextEditingController();
   List todolist = [
-    ["HOME WORK", false],
-    ["Assignment", true]
+    ["Home Work", false],
+    ["Assignment", true],
   ];
 
   void checkboxchanged(bool? value, int index) {
@@ -38,10 +38,15 @@ class _homepageState extends State<homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow[200],
+      backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        title: const Text("TO DO"),
+        title: const Text(
+          "TO DO",
+          style: TextStyle(
+            fontSize: 25,
+          ),
+        ),
         centerTitle: true,
       ),
       body: ListView.builder(
